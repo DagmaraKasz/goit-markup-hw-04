@@ -249,8 +249,8 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     align-items: center;
     justify-content: center;
 }
-.socials-link:hover,
-.socials-link:focus {
+.socials-link: :hover,
+.socials-link: focus {
     background-color: var(--ocean-color);
 }
 .svg-one {
@@ -260,8 +260,8 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     fill: #8E8F99;
 }
 .svg-three {
-    width: 64px;
-    height: 64px;
+    /* width: 64px;
+    height: 64px; */
     top: 24px;
     left: 100px;
 }
@@ -299,12 +299,12 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     
 }
 /* Dla pierwszego punktu listy */
-.clients-link {
+.clients-link-list {
     width: calc((100%-120px)/6);
     height: 88px;
     margin: 24px;
 }
-.links-client {
+.clients-link {
     width: 100%;
     height: 100%;
     border: 1px solid #8E8F99;
@@ -313,6 +313,15 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     align-items: center;
     justify-content: center;
     color:#8e8f99;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: #404bbf;
+    color: #404bbf;
+    border-color: #404bbf;
+    color: #404bbf;
+    cursor: pointer;
 }
 
 /* sekcja main dla portfolio.html */
@@ -603,7 +612,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     width: 1440px;
     height: 380px;
     width: calc((100% - 72px)/4);
-    box-shadow o wartości 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow o wartości 0px 1px 6px rgba(46,47,66,0.08), 0px 1px 1px rgba(46,47,66,0.16), 0px 2px 1px rgba(46,47,66,0.08);
     border-radius: 0px 0px 4px 4px;
 }
 /* W pierwszym punkcie listy znajduje się div,który służy jako kontener dla imienia pracownika i nazwy jego stanowiska */
@@ -627,9 +636,16 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     padding-top: 100px;
     padding-bottom: 100px;
 }
+/* Dla div w klasie ustawiony jest styl align-items: baseline,
+który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej osi kontenera względem linii bazowej tekstu pierwszego wiersza każdego elementu */
 .footer-container {
+    display: flex;
+    align-items: baseline;
     width: 1440px;
     /* height: 312px; */
+}
+.footer-logo-akapit {
+    margin-right: 120px;
 }
 .logo {
     display: inline-block;
@@ -647,7 +663,15 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     margin-top: 16px;
 }
 
-.footer-social-links {}
+.text-akapit-socials {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color)
+    margin-bottom: 16px;
+}
+/* .footer-social-links {} */
 
 
 
