@@ -297,13 +297,13 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     justify-content: center;
     align-content: center;  
 }
-/* Dla pierwszego punktu listy */
+/* Dla pierwszego punktu listy clients */
 .clients-link-list {
-    width: calc((100%-120px)/6);
+    width: calc((100% - 120px) / 6);
     height: 88px;
     margin: 24px;
 }
-
+/* W pierwszym punkcie listy znajduje się link */
 .clients-link {
     width: 100%;
     height: 100%;
