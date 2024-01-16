@@ -1,0 +1,589 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+}
+
+:root {
+    --iris-color: #4D5AE5;
+    --ocean-color: #404BBF;
+    --navyblue-color:#2E2F42;
+    --green-color: #31D0AA;
+    --slate-color: #434455;
+    --light-slate-color: #8E8F99;
+    --cornflower-color: #E7E9FC;
+    --cloud-color: #F4F4FD;
+    --navyblue-modal-color: #2E2F42;
+    --grey-color: #2E2F42;
+    --white-color: #FFFFFF;
+    --dairy-color: #FCFCFC;   
+    }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--slate-color);
+    line-height: 1.6;
+    background-color: var(--white-color);
+}
+
+header {
+    background-color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* klasa menu dla index.html */
+.menu .link {
+    color: var(--navyblue-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+    color: var(--ocean-color);
+}
+
+.menu .link:active {
+    color: var(--ocean-color);
+}
+
+/* tu skonczylam sprawdzac */
+/* dodac address list slate na ocean */
+
+.contact .link {
+    color: var(--slate-color);
+}
+.contact .link:hover,
+.contact .link:focus {
+    color: var(--ocean-color);
+}
+.contact .link:active {
+    color: var(--ocean-color);
+}
+
+.contact {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+}
+
+/* main section h1, przycisk Order Service na index.html przyciski w portfolio*/
+
+.list-buttons {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+}
+
+/* main section, przycisk Order Service na index.html 
+/* class= "buttons" */
+.button-index {
+    font-family: inherit;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    background-color: var(--iris-color);
+}
+.button-index:focus,
+.button-index:hover {
+    background-color: var(--ocean-color);
+    cursor: pointer;
+}
+
+/* tło dla tekstu effective solutions w index.html */
+.descriptions {
+    background-color: var(--navyblue-color, #2e2f42);
+}
+.title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+/* przycisk order service dla index.html */
+
+/* logo w nawigacji */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--iris-color);
+    }
+
+    /* logo dwukolorowe WEBSTUDIO */
+.highlight {
+     color: var(--iris-color);
+}
+.studio-highlight {
+    color: var(--navyblue-color);
+}
+
+.list {
+    list-style: none;
+    font-style: normal;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.address {
+    display: block;
+    font-style: normal;
+}
+
+/* druga sekcja 'Solutions' */
+.list features {
+    list-style: none;
+}
+.highlight-element {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--navyblue-color);
+}
+.akapit {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--slate-color);
+    /* text-align: center; */
+}
+/* trzecia sekcja 'What we are doing'*/
+.subtitle {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--navyblue-color);
+}
+
+/* czwarta sekcja Our Team */
+.people {
+    background-color: var(--cloud-color);
+}
+.our-team {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--navyblue-color);
+}
+
+.people-names {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--navyblue-color);
+}
+
+.list-people {
+    color: var(--slate-color);
+    background-color: var(--white-color);
+}
+    
+/* akapit dla tej sekcji wzięty z sekcji drugiej */
+
+/* sekcja main dla portfolio.html */
+.buttons {
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+ }
+.buttons {
+    color: var(--iris-color);
+    background-color: var(--cloud-color);
+}
+.buttons:focus,
+.buttons:hover {
+    color: var(--white-color);
+    background-color: var(--ocean-color);
+    cursor: pointer;
+    }
+
+/* nie moze byc pusty naglowek dla portfolio.html*/
+.visually-hidden {
+    color: var(--white-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.header-list {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+}
+
+.link{
+    text-decoration: none;
+}
+
+.page-footer {
+    background-color:#2e2f42;
+}
+    
+/* .studio-highlight {
+    color: #F4F4FD;
+} */
+
+.p {
+        font-size: 16px;
+        color: #F4F4FD;
+}
+
+.footer-info {
+    line-height: 1.5;
+    color: var(--cloud-color);
+    letter-spacing: 0.02em;
+}
+
+/* nagłówek - dodwanie kontenerów lekcja 3*/
+
+/* nawigacja dla Index i Portfolio*/
+/* Dla headera przypisane są klasy */
+.header-main-class {
+    border-bottom: 1px solid #E7E9FC;
+}
+/* Wewnątrz headera znajduje się div - kontener zawierający wszystkie pozostałe elementy headera */
+.nav-all-container {
+    display: flex;
+    /* justify-content: first baseline; */
+    align-items: center;
+    width: 1440px;
+    /* margin-bottom: 16px; */
+}
+/* Dla kontenera przypisana jest dodatkowa domyślna klasa container,która służy do standaryzacji rozmiarów treści */
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Wewnątrz headera znajduje się nav */
+/* Dla nav styl display: flex;służący do ułożenia logo i menu w jednym wierszu; styl align-items: center;
+służący do pionowego wyrównania nawigacji i kontaktów */
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--white-color);
+    /* padding: 20px; */
+    border-color: var(--cornflower-color);
+}
+/* Wewnątrz nawigacji znajduje się logo */
+.logo {
+    margin-left: 156px;
+    margin-right: 76px;
+}
+/* Wewnątrz nawigacji znajduje się menu "menu-nav-box" */
+.menu-nav-box {
+    display: flex;
+    gap: 40px;
+}
+/* Dla linku znajdującego się w pierwszym punkcie menu */
+.menu {
+    padding: 24px 0;
+}
+/* Wewnątrz znacznika address znajduje się lista,
+dla której przypisane są klasy */
+.menu-address-box {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    margin-left: 156px;
+}
+.logo-box {
+    align-content: center;
+}
+/* sekcja pierwsza description Solutions */
+.descriptions {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+.title {
+    display:block;
+    max-width: 496px;
+    margin: auto;
+    margin-bottom: 48px;
+}
+.button-index {
+    display: block;
+    justify-content: center;
+    min-width: 169px;
+    border: none;
+    height: 56px;
+    padding: 16px 32px 16px 32px;
+    border-radius: 4px;
+    margin-top: 48px;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* druga sekcja Solutions */
+.features-section {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.features-list {
+    display: flex;
+    gap: 24px;
+    /* margin-right: 24px; */
+    /* width: calc((100% - 72px)/4); */
+}
+/* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 72px) / 4); służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można również użyć width calc((100% - 3 * 24px) / 4) lub flex-basis: calc((100% - 3 * 24px) / 4), lub flex-basis: calc((100% - 72px) / 4)) */
+.features-elements {
+    flex-basis: calc((100% - 72px)/4);
+}
+/* nagłówek h3 np.Strategy */
+.highlight-element {
+    /* width: 264px;
+    height: 24px; */
+    margin-bottom:8px;
+    /* line-height: 24px;
+    font-size: 20px; */
+}
+.akapit {
+    width: 264px;
+    height: 24px;
+    font-size: 16px;
+}
+
+/* wzorzec .visually-hidden do ukrycia nagłówka (zbiór styli wykorzystywanych do pełnego ukrycia elementu)*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.features-elements {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+
+}
+
+.img {
+    display: block;
+}
+/* trzecia sekcja images What are we doing */
+.scope-section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+    /* margin-bottom: 10px; */
+}
+/* nagłówek h2 What are we doing */
+.subtitle {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 72px;
+}
+/* Dla listy w klasie ustawiony jest styl display: flex;
+służący do ułożenia elementów listy poziomo w rzędzie */
+.image-container-all {
+    display: flex;
+    /* padding-bottom: 120px;
+    margin-bottom: 120px; */
+    gap: 24px;
+ }
+/* Dla pierwszego punktu listy przypisane są klasy o długości co najmniej 3 znaków,składające się z małych liter alfabetu łacińskiego i mogące zawierać myślnik lub podkreślnik */
+/* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 48px) / 3);
+służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można użyć width: calc((100% - 3 * 16px) / 3) lub flex-basis: calc((100% - 48px) / 3), lub flex-basis: calc((100% - 3 * 16px) / 3)) */
+.image-container {
+    width: calc((100% - 48px)/3);
+}
+
+/* czwarta sekcja our team */
+.people {
+    width: 1440px;
+    height: 732px;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+/* .container-our-team {
+    display: inline; */
+    /* display: block; */
+    /* display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 4px 4px;
+    width: 1440px;
+    height: 732px;
+} */
+/* nagłówek h2 our team */
+.our-team {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+/* cały box dla zdj nagłówka h3 i paragrafu */
+.people-box {
+    display: flex;
+    /* justify-content: center; */
+    gap: 24px;
+    /* margin-left: 156px;
+    margin-right: 24px; */
+}
+/* Dla pierwszego punktu listy */
+.list-people {
+    width: 1440px;
+    height: 380px;
+    width: calc((100% - 72px)/4);
+    /* border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px; */
+}
+/* W pierwszym punkcie listy znajduje się div,który służy jako kontener dla imienia pracownika i nazwy jego stanowiska */
+.names-positions-box {
+    padding: 32px 0;
+    width: 264px;
+    height: 380px;
+}
+/* nagłówek h3 imie i nazwisko */
+.people-names {
+    text-align: center;
+    margin-bottom: 8px;
+}
+/* W kontenerze drugim elementem jest akapit p */
+.position {
+    text-align: center;
+}
+
+/* footer */
+.page-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-container {
+    width: 1440px;
+    /* height: 312px; */
+}
+.logo {
+    display: inline-block;
+    max-width: 264px;
+}
+/* .logo-footer-box {
+    display: inline-block;
+    margin-bottom: 16px;
+} */
+
+.footer-info {
+    display: block;
+    margin-left: 156px;
+    width: 264px;
+    margin-top: 16px;
+}
+/* strona Portfolio.html main */
+
+/* Wewnątrz znacznika main znajduje się sekcja utworzona za pomocą znacznika section */
+.buttons-main {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+/* Cała treść sekcji jest umieszczona w kontenerze utworzonym przy użyciu znacznika div. Dla tego div przypisana jest domyślna klasa container. Wewnątrz kontenera znajduje się lista */
+
+/* display flex służy do ułożenia elementów listy poziomo w jednym rzędzie; justify-content: center służy do wyśrodkowania elementów potomnych listy; styl gap: 24px służy do określenia odstępów między punktami listy; styl margin-bottom: 72px,
+który służy do określenia odstępu od listy */
+.list-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+/* W pierwszym punkcie listy znajduje się przycisk */
+.buttons {
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+}
+.buttons:focus,
+.buttons:hover {
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+/* Jeszcze jedna lista wewnątrz kontenera - zdjęcia - styl flex-wrap: wrap;służący do przenoszenia elementów listy do nowego wiersza, jeśli nie ma wystarczająco dużo miejsca w poprzednim*/
+.buttons-link {
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+/* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 48px) / 3);służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy w jednym wierszu) */
+.list-link-buttons {
+    width: calc((100%-48px)/3);      
+}
+/* Wewnątrz pierwszego punktu listy znajduje się link. W linku znajduje się kontener dla nazwy i kategorii aplikacji,
+który jest utworzony za pomocą znacznika div*/
+.name-cat-app-box {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+/* Dla nagłówka w klasie ustawiony jest styl margin-bottom: 8px,który służy do określenia odstępu między akapitem a nagłówkiem */
+.header-list {
+    margin-bottom: 8px;
+}
+
