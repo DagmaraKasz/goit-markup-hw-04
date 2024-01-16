@@ -106,8 +106,8 @@ a {
 .descriptions {
     padding: 188px 0;
     max-width: 1440px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
-    /* background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg), var(--grey-color, #2e2f42); */
+    background-image: linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)), url(./images/people-office\ 1.jpg);
+    /* background: linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)), url(./images/people-office\ 1.jpg), var(--grey-color, #2e2f42); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -249,9 +249,11 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     align-items: center;
     justify-content: center;
 }
-.socials-link:hover,
+.socials-link:hover {
+    background-color: var(--ocean-color), #404bbf;
+}
 .socials-link:focus {
-    background-color: var(--green-color), #31d0aa;
+    background-color: var(--ocean-color), #404bbf;
 }
 
 .svg-one {
@@ -666,10 +668,15 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     display: flex;
     gap: 16px;
 }
-/* .footer-social-links {} */
-
-
-
+.footer-socials-link {
+    background-color: var(--green-color), #31d0aa;
+}
+.footer-socials-link:hover {
+    background-color: var(--green-color), #31d0aa;
+}
+.footer-socials-link:focus {
+    background-color: var(--green-color), #31d0aa;
+}
 
 /* strona Portfolio.html main */
 
