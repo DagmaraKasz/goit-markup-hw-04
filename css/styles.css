@@ -251,7 +251,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 }
 .socials-link:hover,
 .socials-link:focus {
-    background-color: var(--ocean-color);
+    background-color: var(--green-color), #31d0aa;
 }
 
 .svg-one {
