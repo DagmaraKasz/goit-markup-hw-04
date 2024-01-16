@@ -662,6 +662,9 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     display: flex;
     gap: 16px;
 }
+.footer-list {
+    list-style: none;
+}
 
 .footer-socials-link {
     width: 100%;
