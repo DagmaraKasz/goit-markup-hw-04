@@ -296,10 +296,9 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 .socials-link:focus {
     background-color: var(--ocean-color);
 }
-.socials-link {
-    fill: var(--ocean-color);
+.socials-link:active {
+    background-color: var(--ocean-color);
 }
-
 .svg-one {
     fill: #F4F4FD;
 }
@@ -363,7 +362,11 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 .clients-link:focus {
     border-color: var(--ocean-color);
     color: var(--ocean-color);
-    fill: var(--ocean-color);
+}
+.clients-link:active {
+    color: var(--ocean-color);
+    border-color: var(--ocean-color);
+
 }
 
 /* sekcja main dla portfolio.html */
@@ -779,9 +782,10 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
     background-color: var(--green-color);
-    fill:#31D0AA;
 }
-
+.footer-socials-link:active {
+    background-color: var(--green-color);
+}
 
 /* strona Portfolio.html main */
 
@@ -829,6 +833,7 @@ który służy do określenia odstępu od listy */
     display: block;
 }
 .image-link:focus,
+.image-link:active,
 .image-link:hover {
     box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08),
