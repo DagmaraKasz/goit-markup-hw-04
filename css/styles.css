@@ -64,6 +64,9 @@ a {
 /* dodac address list slate na ocean */
 
 .contact {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--slate-color);
 }
 .contact:hover,
@@ -103,9 +106,27 @@ a {
     letter-spacing: 0.04em;
     color: var(--white-color);
     background-color: var(--iris-color);
+    cursor: pointer;
+    padding: 16px 32px 16px 32px;
+    min-width: 169px;
+    border: none;
+    border-radius: 4px;
+    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
+
+/* .button-index {
+    display: block;
+    justify-content: center;
+    height: 56px;
+    margin-top: 48px;
+    margin: auto;
+} */
+
+
+
 .button-index:focus,
 .button-index:hover {
+    color: var(--white-color);
     background-color: var(--ocean-color);
     cursor: pointer;
 }
@@ -115,6 +136,7 @@ a {
     padding: 188px 0;
     max-width: 1440px;
     width: 100%;
+    background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
     /* background: linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)), url(./images/people-office\ 1.jpg), var(--grey-color, #2e2f42); */
     background-size: cover;
@@ -122,12 +144,21 @@ a {
     background-repeat: no-repeat;
     margin: auto;
 }
+.header-main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* nagłówek h1 */
 .title {
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-bottom: 48px;
+    max-width: 496px;
 }
 /* przycisk order service dla index.html */
 
@@ -158,6 +189,8 @@ a {
 
 .link {
     text-decoration: none;
+    display: inline-block;
+    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .pointer {
@@ -165,8 +198,8 @@ a {
 }
 
 .address {
-    display: block;
     font-style: normal;
+    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 /* druga sekcja 'Solutions' */
@@ -179,8 +212,9 @@ a {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-decoration: none;
     color: var(--navyblue-color);
+    margin-bottom: 8px;
+    text-align: center;
 }
 .akapit {
     font-family: "Roboto", sans-serif;
@@ -188,9 +222,8 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;
     color: var(--slate-color);
-    /* text-align: center; */
+    text-align: left;
 }
 /* trzecia sekcja 'What we are doing'*/
 .subtitle {
@@ -255,6 +288,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     display: flex;
     align-items: center;
     justify-content: center;
+    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .socials-link:hover {
     background-color: var(--ocean-color);
@@ -269,24 +303,19 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 .svg-two {
     fill: #8E8F99;
 }
-.svg-three {
-    /* width: 64px;
-    height: 64px; */
-    top: 24px;
-    left: 100px;
-}
 
 /* Sekcja 5 Klienci */
 .section-clients {
-    padding-top: 120px;
+    /* padding-top: 120px; */
     padding-bottom: 120px;
     display: flex;
     justify-content: center;
     width: 1128px;
     height: 200px;
-    top: 2568px;
-    left: 156px;
+    /* top: 2568px;
+    left: 156px; */
     margin: 120px 0;
+    align-items: center;
 }
 
 /* nagłówek h2 Customers */
@@ -299,6 +328,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     text-transform: capitalize;
     color: var(--navyblue-color);
     margin-bottom: 72px;
+    padding-top: 120px;
 }
 /* lista klientów clients */
 .clients {
@@ -309,7 +339,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 }
 /* Dla pierwszego punktu listy clients */
 .clients-link-list {
-    flex-basis: calc((100% - 120px) / 2);
+    /* flex-basis: calc((100% - 120px) / 2); */
     width: calc((100% - 120px) / 6);
     height: 88px;
 }
@@ -323,6 +353,8 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     color: var(--light-slate-color);
     border: 1px solid var(--light-slate-color);
     border-radius: 4px;
+    /* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .clients-link:hover,
@@ -385,12 +417,14 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 /* nawigacja dla Index i Portfolio*/
 /* Dla headera przypisane są klasy */
 .header-main-class {
+    display: flex;
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* Wewnątrz headera znajduje się div - kontener zawierający wszystkie pozostałe elementy headera */
 .nav-all-container {
     display: flex;
+    /* gap: 332px; */
     /* justify-content: first baseline; */
     align-items: center;
     width: 1440px;
@@ -423,24 +457,38 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 .menu-nav-box {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
+    margin-right: 150px;
 }
 /* Dla linku znajdującego się w pierwszym punkcie menu */
 .menu {
     padding: 24px 0;
 }
+.link-active {
+    position: relative;
+    color: var(--ocean-color);
+    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
 /* Wewnątrz znacznika address znajduje się lista,
 dla której przypisane są klasy */
 .menu-address-box {
-    list-style: none;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     gap: 40px;
-    margin-left: 156px;
+    padding: 24px 0;
 }
 .logo-box {
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.logo-layout {
+    margin-right: 76px;
+    padding: 24px 0;
+    display: inline-block;
+}
+
 /* sekcja pierwsza description Solutions */
 /* .descriptions {
     padding-top: 188px;
@@ -452,18 +500,7 @@ dla której przypisane są klasy */
     margin: auto;
     margin-bottom: 48px;
 }
-.button-index {
-    display: block;
-    justify-content: center;
-    min-width: 169px;
-    border: none;
-    height: 56px;
-    padding: 16px 32px 16px 32px;
-    border-radius: 4px;
-    margin-top: 48px;
-    margin: auto;
-    cursor: pointer;
-}
+
 
 /* druga sekcja Solutions */
 .features-section {
@@ -474,20 +511,25 @@ dla której przypisane są klasy */
 .features-list {
     display: flex;
     gap: 24px;
+    /* flex-wrap: wrap; */
     /* margin-right: 24px; */
     /* width: calc((100% - 72px)/4); */
 }
 /* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 72px) / 4); służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można również użyć width calc((100% - 3 * 24px) / 4) lub flex-basis: calc((100% - 3 * 24px) / 4), lub flex-basis: calc((100% - 72px) / 4)) */
 .features-elements {
-    flex-basis: calc((100% - 72px)/4);
+    flex-basis: 100%;
+    flex-basis: calc((100% - 72px) / 2);
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .icons-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 112px;
+    /* height: 112px; */
     background-color: #F4F4FD;
+    background-size: 264px;
+    padding: 24px 100px;
     border-radius: 4px;
     margin-bottom: 8px;
 }
@@ -499,6 +541,7 @@ dla której przypisane są klasy */
     /* width: 264px;
     height: 24px; */
     margin-bottom:8px;
+    text-align: left;
     /* line-height: 24px;
     font-size: 20px; */
 }
@@ -533,26 +576,34 @@ dla której przypisane są klasy */
 
 /* trzecia sekcja images What are we doing */
 .scope-section {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 120px;
+    display: block;
+    /* display: flex;
+    flex-direction: column; */
+    padding-bottom: 120px 0;
     /* margin-bottom: 10px; */
 }
 /* nagłówek h2 What are we doing */
 .subtitle {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navyblue-color);
     margin-bottom: 72px;
+    /* padding-bottom: 120px; */
+    /* display: flex; */
+    /* justify-content: center; */
 }
 /* Dla listy w klasie ustawiony jest styl display: flex;
 służący do ułożenia elementów listy poziomo w rzędzie */
 .image-container-all {
     display: flex;
+    gap: 24px;
     /* padding-bottom: 120px;
     margin-bottom: 120px; */
-    gap: 24px;
- }
+}
 /* Dla pierwszego punktu listy przypisane są klasy o długości co najmniej 3 znaków,składające się z małych liter alfabetu łacińskiego i mogące zawierać myślnik lub podkreślnik */
 /* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 48px) / 3);
 służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można użyć width: calc((100% - 3 * 16px) / 3) lub flex-basis: calc((100% - 48px) / 3), lub flex-basis: calc((100% - 3 * 16px) / 3)) */
@@ -572,6 +623,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     border-top-right-radius: 0px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
+    margin-top: 120px;
 }
 /* .container-our-team {
     display: inline; */
@@ -603,20 +655,26 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
 }
 /* Dla pierwszego punktu listy */
 .list-people {
-    width: 1440px;
-    height: 380px;
-    width: calc((100% - 72px)/4);
-    box-shadow: 0px 1px 6px rgba(46,47,66,0.08), 0px 1px 1px rgba(46,47,66,0.16), 0px 2px 1px rgba(46,47,66,0.08);
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
     border-radius: 0px 0px 4px 4px;
+    flex-basis: 100%;
+    max-width: 264px;
+    /* width: 1440px;
+    height: 380px; */
+    /* width: calc((100% - 72px)/4); */
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    /* box-shadow: 0px 1px 6px rgba(46,47,66,0.08), 0px 1px 1px rgba(46,47,66,0.16), 0px 2px 1px rgba(46,47,66,0.08); */
 }
 /* W pierwszym punkcie listy znajduje się div,który służy jako kontener dla imienia pracownika i nazwy jego stanowiska */
 .names-positions-box {
-    display: flex
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 32px 0;
-    width: 264px;
-    height: 168px;
+    /* width: 264px;
+    height: 168px; */
 }
 /* nagłówek h3 imie i nazwisko */
 .people-names {
@@ -643,6 +701,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     background-color: #2e2f42;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-top: 120px;
 }
 
 .p {
@@ -655,6 +714,7 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
 .footer-container {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
     width: 1440px;
     /* height: 312px; */
 }
@@ -662,8 +722,13 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     margin-right: 120px;
 }
 .logo {
-    display: inline-block;
-    max-width: 264px;
+    font-family: "Raleway", sans-serif;
+    color: var(--iris-color);
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 /* .logo-footer-box {
     display: inline-block;
@@ -683,14 +748,17 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
 .text-akapit-socials {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.32px;
     color: var(--white-color);
     margin-bottom: 16px;
+    text-align: center;
 }
 .footer-socials {
     display: flex;
     gap: 16px;
+    justify-content: space-evenly;
 }
 .footer-list {
     list-style: none;
