@@ -296,6 +296,9 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 .socials-link:focus {
     background-color: var(--ocean-color);
 }
+.socials-link {
+    fill: var(--ocean-color);
+}
 
 .svg-one {
     fill: #F4F4FD;
@@ -306,7 +309,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 
 /* Sekcja 5 Klienci */
 .section-clients {
-    /* padding-top: 120px; */
+    padding-top: 120px;
     padding-bottom: 120px;
     display: flex;
     justify-content: center;
@@ -328,7 +331,6 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     text-transform: capitalize;
     color: var(--navyblue-color);
     margin-bottom: 72px;
-    padding-top: 120px;
 }
 /* lista klientów clients */
 .clients {
@@ -361,7 +363,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 .clients-link:focus {
     border-color: var(--ocean-color);
     color: var(--ocean-color);
-    fill:var(--ocean-color);
+    fill: var(--ocean-color);
 }
 
 /* sekcja main dla portfolio.html */
@@ -777,6 +779,7 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
     background-color: var(--green-color);
+    fill:#31D0AA;
 }
 
 
