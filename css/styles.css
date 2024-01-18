@@ -303,8 +303,9 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 .svg-one {
     fill: #F4F4FD;
 }
+/* Dla znacznika svg w klasie ustawiony jest styl fill: currentColor;służący do ustawienia wartości koloru odpowiadającej elementowi rodzicielskiemu (w tym celu należy usunąć właściwość fill w sprite dla ikony) */
 .svg-two {
-    fill: #8E8F99;
+    fill: currentColor;
 }
 
 /* Sekcja 5 Klienci */
