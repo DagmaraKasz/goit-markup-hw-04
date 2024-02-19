@@ -266,6 +266,7 @@ a {
 .socials-logo {
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Dla linku w klasie ustawiony jest styl width: 100%,
