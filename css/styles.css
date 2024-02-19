@@ -326,12 +326,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     flex-wrap: wrap;
     gap: 24px;
 } */
-/* Dla pierwszego punktu listy clients */
-.clients-link-list {
-    /* flex-basis: calc((100% - 120px) / 2); */
-    /* width: calc((100% - 120px) / 6);
-    height: 88px; */
-}
+
 /* W pierwszym punkcie listy znajduje się link */
 /* .clients-link {
     width: 100%;
@@ -658,11 +653,8 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     border-radius: 0px 0px 4px 4px;
     flex-basis: 100%;
     max-width: 264px;
-    /* width: 1440px;
-    height: 380px; */
-    /* width: calc((100% - 72px)/4); */
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    /* box-shadow: 0px 1px 6px rgba(46,47,66,0.08), 0px 1px 1px rgba(46,47,66,0.16), 0px 2px 1px rgba(46,47,66,0.08); */
+    transition background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* W pierwszym punkcie listy znajduje się div,który służy jako kontener dla imienia pracownika i nazwy jego stanowiska */
 .names-positions-box {
@@ -693,7 +685,9 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
 }
 /* Sekcja czwarta Portfolio */
 /* nagłówek h2 our portfolio klasa our-team */
-
+/* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+0px 1px 1px rgba(46, 47, 66, 0.16),
+0px 2px 1px rgba(46, 47, 66, 0.08); */
 
 /* Karta transition dla Portfolio*/
   .img-transition {
