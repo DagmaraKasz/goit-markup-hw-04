@@ -713,7 +713,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-link-buttons {
-    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-four {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
