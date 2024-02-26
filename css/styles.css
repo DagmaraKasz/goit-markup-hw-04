@@ -266,7 +266,6 @@ a {
 .socials-logo {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Dla linku w klasie ustawiony jest styl width: 100%,
@@ -279,7 +278,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
     display: flex;
     align-items: center;
     justify-content: center;
-    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover {
     background-color: var(--ocean-color);
@@ -412,11 +411,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 /* Wewnątrz headera znajduje się div - kontener zawierający wszystkie pozostałe elementy headera */
 .nav-all-container {
     display: flex;
-    /* gap: 332px; */
-    /* justify-content: first baseline; */
     align-items: center;
-    width: 1440px;
-    /* margin-bottom: 16px; */
 }
 /* Dla kontenera przypisana jest dodatkowa domyślna klasa container,która służy do standaryzacji rozmiarów treści */
 .container {
@@ -438,7 +433,6 @@ służący do pionowego wyrównania nawigacji i kontaktów */
 }
 /* Wewnątrz nawigacji znajduje się logo */
 .logo {
-    margin-left: 156px;
     margin-right: 76px;
 }
 /* Wewnątrz nawigacji znajduje się menu "menu-nav-box" */
@@ -461,6 +455,7 @@ dla której przypisane są klasy */
     align-items: center;
     gap: 40px;
     padding: 24px 0;
+    margin-left:auto;
 }
 .logo-box {
     display: flex;
@@ -488,7 +483,6 @@ dla której przypisane są klasy */
 
 /* druga sekcja Solutions */
 .features-section {
-    display: flex;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -530,8 +524,6 @@ dla której przypisane są klasy */
     font-size: 20px; */
 }
 .akapit {
-    width: 264px;
-    height: 24px;
     font-size: 16px;
 }
 
@@ -551,8 +543,6 @@ dla której przypisane są klasy */
 .features-elements {
     display: flex;
     flex-direction: column;
-    margin-right: 24px;
-
 }
 .logo-footer-box {
     margin-bottom: 16px;
@@ -571,8 +561,6 @@ dla której przypisane są klasy */
 /* trzecia sekcja images What are we doing */
 .scope-section {
     display: block;
-    /* display: flex;
-    flex-direction: column; */
     padding-bottom: 120px 0;
     /* margin-bottom: 10px; */
 }
@@ -587,8 +575,6 @@ dla której przypisane są klasy */
     color: var(--navyblue-color);
     margin-bottom: 72px;
     padding-top: 120px;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 /* Dla listy w klasie ustawiony jest styl display: flex;
 służący do ułożenia elementów listy poziomo w rzędzie */
@@ -607,15 +593,8 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
 
 /* czwarta sekcja our team */
 .people {
-    height: 732px;
     padding-bottom: 120px;
     padding-top: 120px;
-    display: flex;
-    flex-direction: column;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
     margin-top: 120px;
 }
 /* .container-our-team {
@@ -655,7 +634,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     flex-basis: 100%;
     max-width: 264px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    transition background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* W pierwszym punkcie listy znajduje się div,który służy jako kontener dla imienia pracownika i nazwy jego stanowiska */
 .names-positions-box {
@@ -663,8 +642,6 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     flex-direction: column;
     align-items: center;
     padding: 32px 0;
-    /* width: 264px;
-    height: 168px; */
 }
 /* nagłówek h3 imie i nazwisko */
 .people-names {
@@ -759,8 +736,6 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    width: 1440px;
-    /* height: 312px; */
 }
 .footer-logo-akapit {
     margin-right: 120px;
@@ -784,9 +759,7 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     color: var(--cloud-color);
     letter-spacing: 0.02em;
     display: block;
-    margin-left: 156px;
     width: 264px;
-    margin-top: 16px;
 }
 
 .text-akapit-socials {
